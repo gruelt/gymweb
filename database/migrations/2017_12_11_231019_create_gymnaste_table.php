@@ -15,6 +15,10 @@ class CreateGymnasteTable extends Migration
     {
         Schema::create('gymnaste', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('email');
+            $table->integer('mobile1');
             $table->timestamps();
         });
     }
