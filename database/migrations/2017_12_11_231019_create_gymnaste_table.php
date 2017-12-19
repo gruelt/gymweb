@@ -17,8 +17,11 @@ class CreateGymnasteTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->string('prenom');
+            $table->string('genre');
             $table->string('email');
             $table->integer('mobile1');
+            $table->integer('mobile2');
+            $table->datetime('date_naissance');
             $table->timestamps();
         });
     }
