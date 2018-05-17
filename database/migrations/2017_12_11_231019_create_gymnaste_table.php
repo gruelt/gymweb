@@ -13,7 +13,7 @@ class CreateGymnasteTable extends Migration
      */
     public function up()
     {
-        Schema::create('gymnaste', function (Blueprint $table) {
+        Schema::create('gymnastes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nom');
             $table->string('prenom');
@@ -33,6 +33,6 @@ class CreateGymnasteTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gymnaste');
+        Schema::dropIfExists('gymnastes');
     }
 }
