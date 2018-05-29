@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
          $this->call(FilieresTableSeeder::class);
          $this->call(CategoriesTableSeeder::class);
          $this->call(NiveauxTableSeeder::class);
-        $this->call(GenresTableSeeder::class);
+         $this->call(GenresTableSeeder::class);
     }
 }
