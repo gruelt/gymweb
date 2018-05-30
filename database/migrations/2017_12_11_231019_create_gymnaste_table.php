@@ -21,6 +21,8 @@ class CreateGymnasteTable extends Migration
             $table->string('email');
             $table->integer('mobile1');
             $table->integer('mobile2');
+            $table->integer('id_equipe');
+            $table->boolean('competitif')->default('0');
             $table->datetime('date_naissance');
             $table->timestamps();
         });
